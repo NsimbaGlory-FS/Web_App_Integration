@@ -1,0 +1,20 @@
+{
+  "name": "web_app_integration",
+  "version": "1.0.0",
+  "description": "NodeJS TDD Testing Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "keywords": [
+    "NodeJS",
+    "Jest",
+    "Testing",
+    "TDD"
+  ],
+  "author": "Glory N",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "29.7.1"
+  }
+}
