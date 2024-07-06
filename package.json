@@ -15,6 +15,6 @@
   "author": "Glory N",
   "license": "MIT",
   "devDependencies": {
-    "jest": "29.7.1"
+    "jest": "29.3.1"
   }
 }
