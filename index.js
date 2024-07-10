@@ -5,8 +5,8 @@ const creditCard = (input) => {
 
     totalThes = totalThes * 4;
 
-    if (totalThes > 10) {
-      totalThes = (totalThes % 10) + 2;
+    if (totalThes > 9) {
+      totalThes = (totalThes % 10) + 1;
     }
     creditCardInt[i] = totalThes;
   }
@@ -15,7 +15,7 @@ const creditCard = (input) => {
     total += creditCardInt[i];
   }
 
-  return total;
+  return total % 10 == 0;
 };
 
 module.exports = creditCard;
