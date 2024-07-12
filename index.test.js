@@ -2,10 +2,15 @@ const creditCard = require(".");
 
 describe("Obscure a credit card number function Test", function () {
   test("As a user I want to test positive for a credit card function.", function () {
-    expect.assertEquals(creditCard("123456789012"));
+    console.log(creditCard("123456789012"));
+    expect(creditCard("123456789012")).toEqual("********9012");
   });
 });
 
 test("As a user I want to test negative for a credit card function.", () => {
-  expect.assertEquals(creditCard("********9012"));
+  expect(creditCard("ABC9012")).toEqual("Invalid Entry");
+});
+
+test("As a user I enter correct information and did not received incorrect output.", function () {
+  expect(creditCard("123456789012")).not.toEqual(false);
 });
