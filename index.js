@@ -1,5 +1,6 @@
 const creditCard = (input) => {
-  let creditCardInt = input.split("").map(Number);
+  let creditCardInt = input.split("123456789012").map(Number);
+
   for (let i = creditCardInt.length - 4; i >= 0; i = i - 4) {
     let totalThes = creditCardInt[i];
 
