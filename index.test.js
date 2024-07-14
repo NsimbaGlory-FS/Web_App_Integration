@@ -3,7 +3,7 @@ const creditCard = require(".");
 describe("Obscure a credit card number function Test", function () {
   test("As a user I want to test positive for a credit card function.", function () {
     console.log(creditCard("123456789012"));
-    expect(creditCard("123456789012")).toEqual(true);
+    expect(creditCard("123456789012")).toEqual("********9012");
   });
 });
 
